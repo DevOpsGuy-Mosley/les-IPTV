@@ -1,0 +1,237 @@
+/* Style général de la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a2639;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background-color: #ff6b6b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Entête */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* En-têtes */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #ff6b6b;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #4ecdc4;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Mise en page des sections */
+.Section-1, .Section-2, .Section-3, .Section-4, .Section-5, 
+.Section-6, .Section-7, .Section-8, .Section-9, .Section-10, 
+.Section-11, .Section-12 {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effets de survol pour les sections */
+.Section-1:hover, .Section-2:hover, .Section-3:hover, 
+.Section-4:hover, .Section-5:hover, .Section-6:hover, 
+.Section-7:hover, .Section-8:hover, .Section-9:hover, 
+.Section-10:hover, .Section-11:hover, .Section-12:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Conteneur de contenu */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Conteneur d'images */
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid #4ecdc4;
+}
+
+/* Style pour les listes */
+ul, ol {
+    padding-left: 20px;
+    text-align: left;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Styles pour le contenu texte */
+.text-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Ajuster les paragraphes */
+.text-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Ajuster les listes */
+.text-content ul, .text-content ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content ul li, .text-content ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Media Queries pour les écrans de petite taille */
+@media (max-width: 768px) 
+    /* Réduire la taille des titres */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Ajuster les sections */
+    .Section-1, .Section-2, .Section-3, .Section-4, 
+    .Section-5, .Section-6, .Section-7, .Section-8,
+    .Section-9, .Section-10, .Section-11, .Section-12 {
+        padding: 10px;
+        margin: 10px auto;
+    }
+    /* Media Queries pour les écrans de petite taille */
+@media (max-width: 768px) {
+    /* Réduire la taille des titres */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Ajuster les sections */
+    .Section-1, .Section-2, .Section-3, .Section-4, 
+    .Section-5, .Section-6, .Section-7, .Section-8, 
+    .Section-9, .Section-10, .Section-11, .Section-12 {
+        padding: 15px; /* Padding réduit pour les petits écrans */
+        margin: 10px auto; /* Espacement réduit entre les sections */
+    }
+
+    /* Ajuster les conteneurs d'images */
+    .image-container {
+        margin: 10px 0; /* Espacement réduit autour des images */
+    }
+
+    /* Ajuster la navbar */
+    nav ul {
+        flex-direction: column; /* Empiler les éléments de la navbar */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espacement réduit entre les éléments de la navbar */
+    }
+}
